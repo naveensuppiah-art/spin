@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3051024726946376"
+     crossorigin="anonymous"></script>
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4CAF50">
+  <meta charset="UTF-8">
+  <title>Spin Rewards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>🎡 Spin Rewards</h2>
+
+<div class="wheel-box">
+  <div class="pointer"></div>
+  <canvas id="wheel" width="300" height="300"></canvas>
+  <button id="spinBtn">SPIN</button>
+</div>
+
+<div class="card">
+  <h3>Your Points</h3>
+  <p><span id="coins">0</span> points</p>
+</div>
+
+<!-- Progress -->
+<div class="progress-box">
+  <div id="progressText">You are 0% close to ₹5 reward</div>
+  <div class="progress-bar">
+    <div id="progressFill"></div>
+  </div>
+</div>
+
+<!-- Daily Task -->
+<div class="task-box">
+  🎯 Daily Task: Spin 3 times → +10 points
+</div>
+
+<!-- Withdraw -->
+<button id="withdrawBtn" class="withdraw">WITHDRAW</button>
+
+<!-- History -->
+<button id="historyBtn" class="history-btn">📜 Withdraw History</button>
+<div id="historyBox" class="history-box" style="display:none;">
+  <ul id="historyList"></ul>
+</div>
+
+<button id="adSpinBtn" class="ad-btn">
+  ▶️ Watch Ad +1 Spin
+</button>
+
+<!-- Rewards Info -->
+<div class="reward-info">
+  <p>🎁 Rewards</p>
+  <p>300 Points = ₹5</p>
+  <p>500 Points = Zomato Coupon</p>
+  <p>1000 Points = ₹20</p>
+  <p>1500 Points = Zomato Coupon</p>
+  <p>5000 Points = 🎉 Big Reward</p>
+  <p>Withdraw: Once per week</p>
+</div>
+
+<script src="script.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+<footer style="margin-top:40px;text-align:center;font-size:14px;color:#ddd;">
+  <a href="privacy.html" style="color:#fff;margin:0 10px;">Privacy Policy</a> |
+  <a href="terms.html" style="color:#fff;margin:0 10px;">Terms & Conditions</a> |
+  <a href="contact.html" style="color:#fff;margin:0 10px;">Contact Us</a>
+</footer>
+</body>
+</html>
