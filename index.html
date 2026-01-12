@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spin Rewards</title>
-    
-    <meta name="monetag" content="fa1723bf87f0bd5a5950aa36d8dcb91">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spin Rewards</title>
 
-    <script src="https://pl28451175.effectivegatecpm.com/15/3d/f9/153df99010d4c48c1e55194f69c85d33.js"></script>
-
-    <link rel="stylesheet" href="style.css">
+  <meta name="monetag" content="fa1723bf87f0bd5a5950aa36d8dcb91">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h2>🎡 Spin Rewards</h2>
+<h2>🎡 Spin Rewards</h2>
 
-    <div class="wheel-box">
-        <div class="pointer"></div>
-        <canvas id="wheel" width="300" height="300"></canvas>
-        <button id="spinBtn">SPIN</button>
-    </div>
+<div class="wheel-box">
+  <div class="pointer"></div>
+  <canvas id="wheel" width="300" height="300"></canvas>
+  <button id="spinBtn">SPIN</button>
+</div>
 
-    <div class="card">
-        <h3>Your Points</h3>
-        <p><span id="coins">0</span> points</p>
-    </div>
+<div class="card">
+  <h3>Your Points</h3>
+  <p><span id="coins">0</span> points</p>
+</div>
 
-    <div class="progress-box">
-        <div id="progressText">You are 0% close to ₹5 reward</div>
-        <div class="progress-bar">
-            <div id="progressFill"></div>
-        </div>
-    </div>
+<div class="progress-box">
+  <div id="progressText">You are 0% close to ₹5 reward</div>
+  <div class="progress-bar">
+    <div id="progressFill"></div>
+  </div>
+</div>
 
-    <div class="actions">
-        <button id="withdrawBtn" class="green">WITHDRAW</button>
-        <button id="historyBtn" class="blue">Withdraw History</button>
-        <button id="watchAdBtn" class="orange">Watch Ad +3 Spins</button>
-    </div>
+<div class="actions">
+  <button id="withdrawBtn">WITHDRAW</button>
+  <button id="historyBtn">Withdraw History</button>
+  <button id="watchAdBtn">Watch Ad +3 Spins</button>
+</div>
 
-    <script src="script.js"></script>
+<!-- HISTORY BOX (MISSING earlier) -->
+<div id="historyBox" style="display:none">
+  <ul id="historyList"></ul>
+</div>
 
+<script src="script.js"></script>
 </body>
 </html>

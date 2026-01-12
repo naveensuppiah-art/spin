@@ -207,3 +207,12 @@ button:active {
   background: linear-gradient(90deg, #00e676, #1de9b6);
   box-shadow: 0 0 12px rgba(0, 230, 118, 0.8);
 }
+/* Fix canvas blocking button clicks */
+canvas {
+  pointer-events: none;
+}
+
+.actions {
+  position: relative;
+  z-index: 10;
+}

@@ -164,7 +164,7 @@ spinBtn.onclick = spinWheel;
 // ===== WATCH AD =====
 watchAdBtn.onclick = () => {
   if (adsWatched >= 3) {
-    alert("❌ Daily ad limit reached");
+    alert("❌ Daily ad limit reached"); 
     return;
   }
 
